@@ -1,0 +1,104 @@
+{
+  "node_data": [
+    {
+      "position": [
+        870,
+        78
+      ],
+      "text": "START"
+    },
+    {
+      "position": [
+        689,
+        261
+      ],
+      "text": "Use GPS to determine loc()"
+    },
+    {
+      "position": [
+        634,
+        467
+      ],
+      "text": "Do something to reach loc()"
+    },
+    {
+      "position": [
+        1271,
+        474
+      ],
+      "text": "Roam around"
+    }
+  ],
+  "arrow_data": [
+    {
+      "start": 0,
+      "origin": "l",
+      "cp1": [
+        678,
+        29
+      ],
+      "cp2": [
+        504,
+        121
+      ],
+      "end": 1,
+      "insertion": "t"
+    },
+    {
+      "start": 1,
+      "origin": "l",
+      "cp1": [
+        345,
+        266
+      ],
+      "cp2": [
+        282,
+        415
+      ],
+      "end": 2,
+      "insertion": "l"
+    },
+    {
+      "start": 2,
+      "origin": "l",
+      "cp1": [
+        457,
+        647
+      ],
+      "cp2": [
+        636,
+        680
+      ],
+      "end": 2,
+      "insertion": "b"
+    },
+    {
+      "start": 2,
+      "origin": "b",
+      "cp1": [
+        1007,
+        561
+      ],
+      "cp2": [
+        1188,
+        293
+      ],
+      "end": 0,
+      "insertion": "r"
+    },
+    {
+      "start": 1,
+      "origin": "b",
+      "cp1": [
+        879,
+        462
+      ],
+      "cp2": [
+        974,
+        344
+      ],
+      "end": 3,
+      "insertion": "l"
+    }
+  ]
+}
