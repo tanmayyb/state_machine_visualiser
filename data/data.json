@@ -2,51 +2,60 @@
   "node_data": [
     {
       "position": [
-        870,
-        78
+        798,
+        88
       ],
       "text": "START"
     },
     {
       "position": [
-        689,
-        261
+        783,
+        304
       ],
       "text": "Use GPS to determine loc()"
     },
     {
       "position": [
-        634,
-        467
+        788,
+        471
       ],
       "text": "Do something to reach loc()"
     },
     {
       "position": [
-        1271,
-        474
+        1175,
+        222
       ],
       "text": "Roam around"
+    },
+    {
+      "position": [
+        242,
+        556
+      ],
+      "text": "Go Home()"
     }
   ],
   "arrow_data": [
     {
       "start": 0,
       "origin": "l",
+      "end": 1,
+      "insertion": "tl",
       "cp1": [
-        678,
-        29
+        647,
+        42
       ],
       "cp2": [
-        504,
-        121
-      ],
-      "end": 1,
-      "insertion": "t"
+        528,
+        159
+      ]
     },
     {
       "start": 1,
       "origin": "l",
+      "end": 2,
+      "insertion": "l",
       "cp1": [
         345,
         266
@@ -54,51 +63,63 @@
       "cp2": [
         282,
         415
-      ],
-      "end": 2,
-      "insertion": "l"
+      ]
     },
     {
       "start": 2,
-      "origin": "l",
+      "origin": "bl",
+      "end": 2,
+      "insertion": "b",
       "cp1": [
-        457,
-        647
+        558,
+        594
       ],
       "cp2": [
-        636,
-        680
-      ],
-      "end": 2,
-      "insertion": "b"
+        861,
+        633
+      ]
     },
     {
       "start": 2,
       "origin": "b",
+      "end": 0,
+      "insertion": "r",
       "cp1": [
-        1007,
-        561
+        1084,
+        552
       ],
       "cp2": [
-        1188,
-        293
-      ],
-      "end": 0,
-      "insertion": "r"
+        1313,
+        398
+      ]
     },
     {
       "start": 1,
       "origin": "b",
+      "end": 3,
+      "insertion": "l",
       "cp1": [
-        879,
-        462
+        1177,
+        486
       ],
       "cp2": [
-        974,
-        344
+        996,
+        257
+      ]
+    },
+    {
+      "start": 1,
+      "origin": "bl",
+      "end": 4,
+      "insertion": "tr",
+      "cp1": [
+        557,
+        359
       ],
-      "end": 3,
-      "insertion": "l"
+      "cp2": [
+        550,
+        510
+      ]
     }
   ]
 }

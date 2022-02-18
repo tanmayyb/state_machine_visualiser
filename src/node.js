@@ -11,15 +11,17 @@ class node{
         this.editor_mode = false
 
         this.dragging = null
-        this.activated = 0
+        this.activated = false
         //this.color = 0;
     }
   
     display(){
-        this.update_if_clicked();
+        this.update_pos();
 
         beginShape()
+        //if this.activated ==  true fill with green if not then fill with white
         this.check_activation()
+        //make an ellipse with that fill
         ellipse(this.x, this.y, this.dim[0], this.dim[1])
         fill(0,0,0)
             strokeWeight(0.1)
@@ -46,11 +48,25 @@ class node{
       return this.node_id
     }
 
-    attach_at(loc){
-        if(loc == "b"){ return [this.x, this.y + this.dim[1]/2]}
-        if(loc == "t"){ return [this.x, this.y - this.dim[1]/2]}
-        if(loc == "l"){ return [this.x - this.dim[0]/2, this.y]}
-        if(loc == "r"){ return [this.x + this.dim[0]/2, this.y]}
+    attaches_at(loc){
+        //where dim is size and a,b are properties of ellipses
+        let padding = 2
+        let a = this.dim[0]/2 + padding
+        let b = this.dim[1]/2 + padding
+        var theta = 0
+        
+        if(loc == "b"){ theta = -PI/2}
+        if(loc == "t"){ theta = PI/2}
+        if(loc == "l"){ theta = PI}
+        if(loc == "r"){ theta = 0}
+
+        if(loc == "tr"){ theta = PI/4}
+        if(loc == "tl"){ theta = 3*PI/4}
+        if(loc == "bl"){ theta = 5*PI/4}
+        if(loc == "br"){ theta = 7*PI/4}
+        
+        return [this.x + a*cos(theta), this.y - b*sin(theta)]
+        
     }
 
     clicked(){
@@ -63,7 +79,7 @@ class node{
         return false
       }
 
-      update_if_clicked(){
+      update_pos(){
         if(this.dragging == true){
             this.x = mouseX
             this.y = mouseY
@@ -79,7 +95,8 @@ class node{
     update_state(activation){
         if ( activation ) { this.activated = true } else { this.activated = false }
     }
+    
   
   }
-
+  //static variable
   node.last_dragged = null

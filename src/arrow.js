@@ -8,10 +8,10 @@ class arrow{
         this.origin = origin
         this.insertion = insertion
 
-        this.cp_list.push(new cpoint(this.start_node.attach_at(this.origin), 0))
+        this.cp_list.push(new cpoint(this.start_node.attaches_at(this.origin), 0))
         this.cp_list.push(new cpoint(cp1, 1))
         this.cp_list.push(new cpoint(cp2, 2))
-        this.cp_list.push(new cpoint(this.end_node.attach_at(this.insertion), 3))
+        this.cp_list.push(new cpoint(this.end_node.attaches_at(this.insertion), 3))
 
         this.editor_mode = true
       }
@@ -82,8 +82,8 @@ class arrow{
     }
     
     update_endpoints(){
-        this.cp_list[0].update_pos(this.start_node.attach_at(this.origin))
-        this.cp_list[3].update_pos(this.end_node.attach_at(this.insertion))
+        this.cp_list[0].update_pos(this.start_node.attaches_at(this.origin))
+        this.cp_list[3].update_pos(this.end_node.attaches_at(this.insertion))
     }
 
     display(){

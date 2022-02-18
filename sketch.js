@@ -18,11 +18,17 @@ let nodes = []
 let arrows = []
 //default editor mode set as 'false'
 let editor_mode_variable = false
+let recording = false
 
+var fps = 60;
+// the canvas capturer instance
+var capturer = new CCapture({ format: 'png', 
+                              framerate: fps });
+                      
 function preload(){
   //load contents of JSON file into "json" variable synchronously
   json = loadJSON('./data/data.json');
-  console.log("loaded json")
+  console.log("loaded data.json")
 }
 
 function setup() {
@@ -33,12 +39,16 @@ function setup() {
   console.log("node setup done")
   setup_arrows(json.arrow_data)
   console.log("arrow setup done")
+  frameRate(fps)
 }
 
 function draw() {
   clear()
+  
+  nodes[0].update_state(true)
   display(arrows)
   display(nodes)
+  update_recorder(recording)
 }
 
 function setup_nodes(node_data){
@@ -116,8 +126,29 @@ function keyPressed(){
   //if editor mode command is invoked
   if(key=='e'){
     editor_mode_variable = !editor_mode_variable
-    console.log(editor_mode_variable)
+    console.log("editormode status:", editor_mode_variable)
     editor_mode(editor_mode_variable)
+  }
+  //if recording command is invoked
+  if(key=='r'){
+    //recorder is false at first
+    recording = !recording
+    //makes recording true
+    if(!recording){
+      noLoop()
+      console.log('recording finished')
+      capturer.stop()
+      capturer.save()
+      return
+    }
+      capturer.start()
+      console.log('recording started')
+  }
+}
+
+function update_recorder(recording){
+  if(recording){
+    capturer.capture(document.getElementById('defaultCanvas0'));
   }
 }
 
