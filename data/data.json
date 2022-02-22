@@ -2,124 +2,331 @@
   "node_data": [
     {
       "position": [
-        798,
-        88
+        800,
+        76
       ],
-      "text": "START"
+      "text": "INIT_SYS"
     },
     {
       "position": [
-        783,
-        304
+        810,
+        199
       ],
-      "text": "Use GPS to determine loc()"
+      "text": "WAIT_INST"
     },
     {
       "position": [
-        788,
-        471
+        731,
+        347
       ],
-      "text": "Do something to reach loc()"
+      "text": "GO_TO_WAYPOINT"
     },
     {
       "position": [
-        1175,
-        222
+        905,
+        482
       ],
-      "text": "Roam around"
+      "text": "FIND_ARTAG"
     },
     {
       "position": [
-        242,
-        556
+        1019,
+        561
       ],
-      "text": "Go Home()"
+      "text": "APPROACH_TAG"
+    },
+    {
+      "position": [
+        1103,
+        717
+      ],
+      "text": "ERROR"
+    },
+    {
+      "position": [
+        1240,
+        839
+      ],
+      "text": "SYS_SHUTDOWN"
+    },
+    {
+      "position": [
+        676,
+        729
+      ],
+      "text": "TELEOPERATION"
     }
   ],
   "arrow_data": [
     {
       "start": 0,
-      "origin": "l",
+      "origin": "bl",
       "end": 1,
       "insertion": "tl",
       "cp1": [
-        647,
-        42
+        721,
+        112
       ],
       "cp2": [
-        528,
-        159
-      ]
+        719,
+        157
+      ],
+      "text": "SUCCESS"
     },
     {
       "start": 1,
-      "origin": "l",
-      "end": 2,
-      "insertion": "l",
+      "origin": "tr",
+      "end": 1,
+      "insertion": "t",
       "cp1": [
-        345,
-        266
+        907,
+        154
       ],
       "cp2": [
-        282,
-        415
-      ]
-    },
-    {
-      "start": 2,
-      "origin": "bl",
-      "end": 2,
-      "insertion": "b",
-      "cp1": [
-        558,
-        594
+        800,
+        76
       ],
-      "cp2": [
-        861,
-        633
-      ]
+      "text": "REPEAT"
     },
     {
-      "start": 2,
-      "origin": "b",
-      "end": 0,
+      "start": 5,
+      "origin": "r",
+      "end": 1,
       "insertion": "r",
       "cp1": [
-        1084,
-        552
+        1533,
+        693
       ],
       "cp2": [
-        1313,
-        398
-      ]
+        1395,
+        231
+      ],
+      "text": "RESET"
+    },
+    {
+      "start": 4,
+      "origin": "br",
+      "end": 1,
+      "insertion": "br",
+      "cp1": [
+        1380,
+        651
+      ],
+      "cp2": [
+        1215,
+        231
+      ],
+      "text": "PASSED_GATE"
     },
     {
       "start": 1,
+      "origin": "b",
+      "end": 2,
+      "insertion": "t",
+      "cp1": [
+        745,
+        246
+      ],
+      "cp2": [
+        739,
+        278
+      ],
+      "text": "GET_WAYPOINT"
+    },
+    {
+      "start": 1,
+      "origin": "bl",
+      "end": 7,
+      "insertion": "l",
+      "cp1": [
+        360,
+        273
+      ],
+      "cp2": [
+        287,
+        572
+      ],
+      "text": "OPERATOR_INTERRUPT"
+    },
+    {
+      "start": 2,
+      "origin": "r",
+      "end": 2,
+      "insertion": "tr",
+      "cp1": [
+        866,
+        345
+      ],
+      "cp2": [
+        816,
+        269
+      ],
+      "text": "REPEAT"
+    },
+    {
+      "start": 2,
       "origin": "b",
       "end": 3,
       "insertion": "l",
       "cp1": [
-        1177,
-        486
+        725,
+        428
       ],
       "cp2": [
-        996,
-        257
-      ]
+        772,
+        488
+      ],
+      "text": "REACHED_GEOFENCE"
     },
     {
-      "start": 1,
+      "start": 2,
+      "origin": "l",
+      "end": 7,
+      "insertion": "tl",
+      "cp1": [
+        476,
+        400
+      ],
+      "cp2": [
+        485,
+        583
+      ],
+      "text": "OPERATOR_INTERRUPT"
+    },
+    {
+      "start": 3,
+      "origin": "r",
+      "end": 3,
+      "insertion": "tr",
+      "cp1": [
+        1012,
+        485
+      ],
+      "cp2": [
+        972,
+        415
+      ],
+      "text": "REPEAT"
+    },
+    {
+      "start": 3,
+      "origin": "b",
+      "end": 4,
+      "insertion": "l",
+      "cp1": [
+        906,
+        535
+      ],
+      "cp2": [
+        921,
+        557
+      ],
+      "text": "SUCCESS"
+    },
+    {
+      "start": 3,
       "origin": "bl",
+      "end": 7,
+      "insertion": "t",
+      "cp1": [
+        718,
+        526
+      ],
+      "cp2": [
+        631,
+        583
+      ],
+      "text": "OPERATOR_INTERRUPT"
+    },
+    {
+      "start": 4,
+      "origin": "r",
       "end": 4,
       "insertion": "tr",
       "cp1": [
-        557,
-        359
+        1143,
+        557
       ],
       "cp2": [
-        550,
-        510
-      ]
+        1102,
+        489
+      ],
+      "text": "REPEAT"
+    },
+    {
+      "start": 4,
+      "origin": "b",
+      "end": 5,
+      "insertion": "t",
+      "cp1": [
+        1022,
+        639
+      ],
+      "cp2": [
+        1045,
+        669
+      ],
+      "text": "FAIL"
+    },
+    {
+      "start": 4,
+      "origin": "bl",
+      "end": 7,
+      "insertion": "tr",
+      "cp1": [
+        860,
+        588
+      ],
+      "cp2": [
+        788,
+        624
+      ],
+      "text": "OPERATOR_INTERRUPT"
+    },
+    {
+      "start": 7,
+      "origin": "r",
+      "end": 5,
+      "insertion": "l",
+      "cp1": [
+        847,
+        758
+      ],
+      "cp2": [
+        972,
+        752
+      ],
+      "text": "FAIL"
+    },
+    {
+      "start": 7,
+      "origin": "b",
+      "end": 1,
+      "insertion": "l",
+      "cp1": [
+        186,
+        931
+      ],
+      "cp2": [
+        33,
+        193
+      ],
+      "text": "RESTART_NAVIGATION"
+    },
+    {
+      "start": 5,
+      "origin": "b",
+      "end": 6,
+      "insertion": "tl",
+      "cp1": [
+        1108,
+        772
+      ],
+      "cp2": [
+        1140,
+        805
+      ],
+      "text": "SHUTDOWN_INTERRUPT"
     }
   ]
 }
