@@ -25,9 +25,16 @@ class node {
         //if this.activated ==  true fill with green if not then fill with white
         this.check_activation()
         //make an ellipse with that fill
+        strokeWeight(1)
+        if (this.text == "ERROR" || this.text == "SYS_SHUTDOWN") {
+            strokeWeight(2)
+            stroke(255, 0, 0)
+        }
         ellipse(this.x, this.y, this.dim[0], this.dim[1])
+        stroke(0, 0, 0)
         fill(0, 0, 0)
         strokeWeight(0.1)
+        textSize(12)
         if (this.text != null) {
             text(this.text, this.x, this.y)
         }
