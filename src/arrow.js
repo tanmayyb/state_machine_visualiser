@@ -68,6 +68,9 @@ class arrow {
   draw_text() {
     let x = bezierPoint(this.start().x, this.cp1().x, this.cp2().x, this.end().x, 1 / 2)
     let y = bezierPoint(this.start().y, this.cp1().y, this.cp2().y, this.end().y, 1 / 2)
+    textStyle(NORMAL)
+    textSize(10)
+    strokeWeight(0.8)
     text(this.text, x, y)
   }
 
