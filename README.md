@@ -43,7 +43,7 @@ CCapture.js
 How does the code work?
 How to configure nodes:?
 How to configure arrows:?
-Check our wiki!
+Check our wiki! (might not be updated :P)
 
 ### Who to call for help?
 The main contributors - if they pick up. Worth a try though.
