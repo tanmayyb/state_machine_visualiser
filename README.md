@@ -33,6 +33,16 @@ You use a state machine to show that. Our webapp emulates a custom state machine
     ```
 
 ### How to launch/use
+
+Open CMD/Terminal/PowerShell IN YOUR DIRECTORY and enter:
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
+```
+Then enter this to launch the tool:
+```
+browser-sync start -s
+```
+
 Webscripts in the code:
 p5.js
 CCapture.js
