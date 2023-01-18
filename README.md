@@ -1,6 +1,10 @@
 # dummy_state_machine_2022
 
 
+![state_machine](https://user-images.githubusercontent.com/72982560/213274442-7793da56-2c9e-4aa9-a363-e33621159c2c.png)
+
+
+
 ## Table of Contents
 
 - [Authors](#authors)
